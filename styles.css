@@ -1,6 +1,6 @@
 body {
   font-family: montserrat, sans-serif;
-  background-color: purple;
+  background-color: LightBlue;
 }
 
 #app {
@@ -9,6 +9,11 @@ body {
   margin: 0 auto;
   border: 3px solid grey;
   padding: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 #time {
@@ -28,13 +33,45 @@ body {
 
 input[type="text"] {
   padding: 10px;
+  border: solid 1px black;
+  width: 300px;
+}
+
+button,
+input[type="submit"] {
   border: none;
-  background-color: blue;
-  color: snow;
+  background-color: royalblue;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 5px;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task .completed {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.done {
+  display: inline-block;
+  padding: 5px;
+  background-color: lightgray;
 }
