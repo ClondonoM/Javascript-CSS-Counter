@@ -1,0 +1,40 @@
+body {
+  font-family: montserrat, sans-serif;
+  background-color: purple;
+}
+
+#app {
+  background-color: snow;
+  width: 500px;
+  margin: 0 auto;
+  border: 3px solid grey;
+  padding: 20px;
+}
+
+#time {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#time #value {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  background-color: blue;
+  color: snow;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
