@@ -16,6 +16,13 @@ body {
   -o-border-radius: 5px;
 }
 
+.pomodoro {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: royalblue;
+}
+
 #time {
   text-align: center;
   padding: 20px 0;
