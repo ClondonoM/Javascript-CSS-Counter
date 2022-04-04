@@ -18,6 +18,8 @@ form.addEventListener("submit", (e) => {
     createTask(itTask.value);
     itTask.value = "";
     renderTasks();
+    const time2 = document.getElementById("time2");
+    // console.log("tiempo selector ", time2.value);
   }
 });
 
@@ -27,7 +29,7 @@ function createTask(value) {
     title: value,
     completed: false,
   };
-  console.log(newTask);
+  // console.log(newTask);
   tasks.unshift(newTask);
 }
 
@@ -62,8 +64,7 @@ function renderTasks() {
 }
 
 function startButtonHandler(id) {
-  // time = 25 * 60;
-  time = 5;
+  time = time2.value * 60;
   current = id;
   const taskIndex = tasks.findIndex((task) => task.id === id);
   taskName.textContent = tasks[taskIndex].title;
@@ -87,8 +88,7 @@ function timerHandler(id) {
 }
 
 function startBreak(id) {
-  //time = 5 * 60;
-  time = 3;
+  time = 5 * 60;
   taskName.textContent = "Break";
   renderTime();
   timerBreak = setInterval(() => {
